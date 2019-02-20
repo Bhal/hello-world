@@ -26,16 +26,18 @@ limitations under the License.
   <version>1.0-SNAPSHOT</version>
 
   <!-- [START_EXCLUDE] -->
-  <parent>                              <!-- Get parameters and allow bulk testing -->
+ <!--  <parent>                              Get parameters and allow bulk testing
     <artifactId>getting-started-java</artifactId>
     <groupId>com.example</groupId>
     <version>1.0.0</version>
     <relativePath>../..</relativePath>
-  </parent>
+  </parent> -->
   <!-- [END_EXCLUDE] -->
 
 <!-- [START properties] -->
   <properties>
+   	 <app.id>bhal-bhusse</app.id>
+   	 <app.version>bhal</app.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <!-- REQUIRED by appengine-maven-plugin plugin, if web.xml does not exist for your application -->
@@ -51,13 +53,13 @@ limitations under the License.
     <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-api-1.0-sdk</artifactId>
-      <version>1.9.69</version>
+      <version>1.9.55</version>
     </dependency>
     <!-- [START servlet] -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
+      <version>3.0.1</version>
       <type>jar</type>
       <scope>provided</scope>
     </dependency>
@@ -65,32 +67,32 @@ limitations under the License.
 
     <!-- [START_EXCLUDE] -->
     <!-- Test Dependencies -->
-    <dependency>
+   <!--  <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-testing</artifactId>
       <version>1.9.69</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+  <!--   <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-api-stubs</artifactId>
       <version>1.9.69</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+   <!--  <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-tools-sdk</artifactId>
       <version>1.9.69</version>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
 
-    <dependency>
+  <!--   <dependency>
       <groupId>com.google.truth</groupId>
       <artifactId>truth</artifactId>
       <version>0.42</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
+    </dependency> -->
+   <!--  <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13-beta-1</version>
@@ -101,7 +103,7 @@ limitations under the License.
       <artifactId>mockito-core</artifactId>
       <version>2.23.4</version>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
     <!-- [END_EXCLUDE] -->
   </dependencies>
 
