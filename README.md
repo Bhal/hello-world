@@ -1,4 +1,4 @@
-HelloWorld for App Engine Standard (Java 8)
+Hello World for App Engine Standard (Java 8)
 ============================
 
 This sample demonstrates how to deploy an application on Google App Engine.
